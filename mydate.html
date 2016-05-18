@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>万年历</title>
+    <link rel="stylesheet" type="text/css" href="mydate.css"/>
+    
+</head>
+<body>
+<!--实现整体基本的万年历框架 -->
+<div class="container">
+    <div class="selectall">
+        <select id = "choiceyear" class="choice" onchange="change()"></select>
+        <select id = "choicemonth" class="choice1" onchange="change()"></select>
+        <input type="button" value="返回今天" onclick="back()" />
+    </div>
+    <div class="div2">
+        <table>
+            <tbody>
+                <tr id="weekdaybar">
+                    <td class="weekendday">日</td>
+                    <td class="weekday">一</td>
+                    <td class="weekday">二</td>
+                    <td class="weekday">三</td>
+                    <td class="weekday">四</td>
+                    <td class="weekday">五</td>
+                    <td class="weekendday">六</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<script type="text/javascript" src="mydate.js"></script>   
+</body>
+</html>
